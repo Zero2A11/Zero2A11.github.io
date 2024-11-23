@@ -3,18 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Zero
 subtitle: ''
-description: ''
+description: 'Never put off till tomorrow what you can do today'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Zero
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://Zero2A11.github.io/
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title/
+permalink: post/:year/:month/:day/:abbrlink/
+abbrlink:
+  alg: crc32   # 算法：crc16(default) or crc32
+  rep: hex     # 进制：dec(default) or hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -40,7 +44,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -96,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
